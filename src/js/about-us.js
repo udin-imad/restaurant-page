@@ -1,4 +1,4 @@
-import { hero } from "../index.js";
+import { hero } from "./index.js";
 
 export function about() {
   const wrapper = document.createElement('div');

@@ -1,4 +1,4 @@
-import { body } from "../index.js";
+import { body } from "./index.js";
 
 export function navbar() {
 
