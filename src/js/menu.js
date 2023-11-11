@@ -1,4 +1,7 @@
 import { hero } from "./index.js";
+import image1 from '../img/image1.png'
+import image2 from '../img/image2.png'
+import image3 from '../img/image3.png'
 
 export function menu() {
   const menu = document.createElement('div');
@@ -12,7 +15,7 @@ export function menu() {
   menuTitle1.textContent = 'Noodle Dragon Fiery';
   const menuImg1 = document.createElement('img');
   menu1.appendChild(menuImg1);
-  menuImg1.setAttribute('src', './img/image1.png')
+  menuImg1.src = image1;
 
   const menu2 = document.createElement('div');
   menu.appendChild(menu2);
@@ -21,7 +24,7 @@ export function menu() {
   menuTitle2.textContent = 'Silk White Spicy Tofu';
   const menuImg2 = document.createElement('img')
   menu2.appendChild(menuImg2);
-  menuImg2.setAttribute('src', './img/image3.png')
+  menuImg2.src = image3;
 
   const menu3 = document.createElement('div');
   menu.appendChild(menu3);
@@ -30,5 +33,5 @@ export function menu() {
   menuTitle3.textContent = 'Great Dumpling Emperor';
   const menuImg3 = document.createElement('img')
   menu3.appendChild(menuImg3);
-  menuImg3.setAttribute('src', './img/image2.png')
+  menuImg3.src = image2;
 }

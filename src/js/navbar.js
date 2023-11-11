@@ -1,4 +1,5 @@
 import { body } from "./index.js";
+import Icon from '../img/icon.png'
 
 export function navbar() {
 
@@ -10,7 +11,7 @@ export function navbar() {
   const logoImg = document.createElement('img');
   logoImg.classList.add('icon');
   logo.appendChild(logoImg);
-  logoImg.setAttribute('src', './img/icon.png');
+  logoImg.src = Icon;
   const logoTitle = document.createElement('p');
   logo.appendChild(logoTitle);
   logoTitle.textContent = 'Dragon';

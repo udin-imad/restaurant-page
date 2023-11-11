@@ -3,6 +3,7 @@ import { home } from "./home.js";
 import { about } from "./about-us.js";
 import { menu } from "./menu.js";
 import { contact } from "./contact.js";
+import '../css/style.css';
 
 export const body = document.querySelector('#content');
 const button = navbar()
