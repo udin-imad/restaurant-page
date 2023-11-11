@@ -132,3 +132,31 @@ body {
 .description>div>p {
   font-size: 1.3rem;
 }
+
+#hero>.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+#hero>.menu>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+#hero>.menu>div>h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+#hero>.menu>div>img {
+  border: 3px solid gold;
+  border-radius: 20px;
+  height: 500px;
+}

@@ -1,6 +1,7 @@
 import { navbar } from "./navbar.js";
 import { home } from "./home.js";
 import { about } from "./about-us.js";
+import { menu } from "./menu.js";
 
 export const body = document.querySelector('#content');
 const button = navbar()
@@ -17,6 +18,11 @@ button.homeButton.addEventListener('click', () => {
 button.aboutButton.addEventListener('click', () => {
   refresh()
   about()
+});
+
+button.menuButton.addEventListener('click', () => {
+  refresh();
+  menu();
 })
 
 function refresh() {
