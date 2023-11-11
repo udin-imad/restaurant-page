@@ -2,6 +2,7 @@ import { navbar } from "./navbar.js";
 import { home } from "./home.js";
 import { about } from "./about-us.js";
 import { menu } from "./menu.js";
+import { contact } from "./contact.js";
 
 export const body = document.querySelector('#content');
 const button = navbar()
@@ -23,6 +24,11 @@ button.aboutButton.addEventListener('click', () => {
 button.menuButton.addEventListener('click', () => {
   refresh();
   menu();
+});
+
+button.contactButton.addEventListener('click', () => {
+  refresh()
+  contact()
 })
 
 function refresh() {
