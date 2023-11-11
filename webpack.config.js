@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   mode: 'development',
@@ -28,6 +29,25 @@ module.exports = {
         test: /\.html$/i,
         loader: 'html-loader'
       }
+    ],
+  },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.sharpMinify,
+          options: {
+            encodeOptions: {
+              jpeg: {
+                compressionLevel: 3,
+              },
+              png: {
+                compressionLevel: 3,
+              }
+            },
+          },
+        },
+      }),
     ],
   },
 };
