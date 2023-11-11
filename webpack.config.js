@@ -39,12 +39,10 @@ module.exports = {
           options: {
             encodeOptions: {
               jpeg: {
-                quality: 70,
-                compressionLevel: 3,
+                quality: 50,
               },
               png: {
-                quality: 70,
-                compressionLevel: 3,
+                quality: 50,
               }
             },
           },
