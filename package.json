@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack build --mode=production",
     "test": "npm run build",
-    "gh-push": "git subtree pull --prefix dist origin gh-pages"
+    "gh-push": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
