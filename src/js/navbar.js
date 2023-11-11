@@ -8,6 +8,7 @@ export function navbar() {
   const logo = document.createElement('div');
   header.appendChild(logo);
   const logoImg = document.createElement('img');
+  logoImg.classList.add('icon');
   logo.appendChild(logoImg);
   logoImg.setAttribute('src', './img/icon.png');
   const logoTitle = document.createElement('p');
